@@ -7,10 +7,8 @@
   </head>
 
   <body>
-  <?php 
-  $activePage = "Loisirs";
-  include 'header.php'; 
-  ?>
+  <?php $activePage = "Loisirs"; ?>
+  <?php include 'header.php'; ?>
 
     <main class="flex">
       <ul id ="loisirs" class="flex">

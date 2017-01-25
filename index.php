@@ -7,10 +7,8 @@
   </head>
 
   <body>
-    <?php 
-    $activePage = "Home";
-    include 'header.php'; 
-    ?>
+    <?php $activePage = "Home"; ?>
+    <?php include 'header.php'; ?>
 
     <main class="flex">
       <article id="nameArticle">

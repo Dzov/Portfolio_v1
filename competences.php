@@ -7,10 +7,8 @@
   </head>
 
   <body>
-    <?php 
-    $activePage = "Compétences";
-    include "header.php";
-    ?>
+    <?php $activePage = "Compétences"; ?>
+    <?php include "header.php"; ?>
 
     <main id="main" class="flex flexColumn">
       <section id="webDevSection" class="flex">

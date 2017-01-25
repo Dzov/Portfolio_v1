@@ -7,10 +7,8 @@
   </head>
 
   <body>
-    <?php 
-    $activePage = "Expérience";
-    include "header.php"; 
-    ?>
+    <?php $activePage = "Expérience"; ?>
+    <?php include "header.php"; ?>
 
     <main>
       <section id="meemSection" class="flex">
