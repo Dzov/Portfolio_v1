@@ -1,0 +1,156 @@
+
+main {
+  height:70%;
+  /*padding-bottom: 15%;*/
+}
+
+section {
+  width: 50%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+article {
+  flex: 1 50%;
+  text-align: justify; 
+}
+
+#simplonLogo{
+  height: auto;
+  width: 50%;
+  align-self: center; 
+  margin-bottom: 20px;
+}
+
+figcaption {
+  opacity: 0; 
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+  /**************** **************** **************** ------ANIMATIONS------ **************** **************** ****************/
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+
+#simplonArticle {
+  position: relative;
+  animation: simplonAppear 2s both;
+}
+
+@keyframes simplonAppear {
+  from {
+    right: 1000px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+#lcArticle {
+  position: relative;
+  animation: lcAppear 2s both;
+}
+
+@keyframes lcAppear {
+  from {
+    left: 1000px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+
+#lcArticle:hover figcaption, 
+#simplonArticle:hover figcaption {
+  animation: textAppear 1s both; 
+}
+
+
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+    /**************** **************** **************** ------ ANIMATIONS ------ **************** **************** ****************/
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+
+
+@keyframes textAppear{
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+    /**************** **************** **************** ------ MEDIA QUERIES ------ **************** **************** ****************/
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+
+
+@media (max-width: 700px) {
+
+  footer {
+    position: static;
+  }
+
+  #simplonLogo, 
+  #lcLogo {
+    width: 65%;
+  }
+
+}
+
+/*-----------------*/
+#simplonLogo {
+  border-radius: 100%; 
+  position: relative;
+  animation: test 10s infinite both;
+  /*box-shadow: 10px 5px 10px grey; */
+}
+
+#lcLogo {
+  /*border-radius: 100%; */
+  position: relative;
+  animation: test 10s infinite both;
+  animation-delay: .4s;
+}
+
+@keyframes test {
+
+  0%, 10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(0px, 0px, 0px);
+    /*box-shadow: 10px 15px 10px grey; */
+  }
+  0%, 20%, 40%, 60%, 80%, 100% {
+    transform: translate3d(0px, 20px, 0px);
+    /*box-shadow: 5px 5px 10px lightgrey; */
+  }
+}
+
+
+#simplonLogo:hover, 
+#lcLogo:hover {
+  animation: none;
+}
+
+
+@media (max-width: 700px) {
+  footer {
+    position: absolute;
+    bottom: 0; 
+  }
+  p {
+    font-size: 10px;
+  }
+  article {
+    margin-top: -30px;
+  }
+}
+
+
+
+

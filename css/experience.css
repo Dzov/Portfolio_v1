@@ -1,0 +1,114 @@
+main { 
+  padding: 0 150px;
+}
+
+section {
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+summary, article {
+  padding: 25px;
+}
+
+summary {
+  flex: 1;
+  align-self: center; 
+  text-align: center; 
+}
+
+article {
+  flex: 2;
+  border-radius: 20px; 
+}
+
+h1 {
+  font-size: 20px; 
+}
+
+h2 {
+  font-size: 15px;
+}
+
+p {
+  line-height: 1.5; 
+  margin: 10px 0;
+  text-indent: 25px; 
+  text-align: justify;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px;
+  align-self: center;
+  border: none;
+  font-size: 12px;
+  color: #708090;
+  background-color: #f4f7f8;
+  box-shadow: 1px 2px 3px lightgrey;
+}
+
+.btn:active {
+  box-shadow: none; 
+  border: none;
+}
+
+#meddeSummary {
+  order: 1;
+}
+
+#meemArticle, 
+#senseArticle {
+  background-color: #454857;
+  color: #C0C0C0;
+}
+
+#meddeArticle {
+  background-color: #5fcf80;
+}
+
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+    /**************** **************** **************** ------ ANIMATIONS ------ **************** **************** ****************/
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+
+
+article {
+  animation: articleAppear 2s both;
+}
+
+@keyframes articleAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+    /**************** **************** **************** ------ MEDIA QUERIES ------ **************** **************** ****************/
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+
+
+@media (max-width: 700px) {
+
+  main {
+    padding: 0 20px;
+  }
+
+  #meddeSummary {
+    order: -1;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+}
+
+
+
+
+
+

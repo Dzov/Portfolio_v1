@@ -1,0 +1,173 @@
+
+/*
+
+background-color: #454857;
+green: #5fcf80;
+gris: #BCBCBC;
+gris foncé: #454857; 
+font-color: #708090;
+font-color sur fond gris: #C0C0C0;
+
+box-shadow: 5px 8px 20px grey; 
+
+*/
+
+
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+    /**************** **************** **************** ------MAIN STYLES------ **************** **************** ****************/
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family:  'Nova Round';
+  color: #708090;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Nova Round'; 
+}
+
+li {
+  list-style: none; 
+}
+
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  flex-direction: column; 
+}
+
+.flexCenter {
+  justify-content: center; 
+}
+
+
+
+.fa {
+  font-size: 25px;
+  padding: 0 10px;
+} /*icones FontAwesome*/
+
+
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+    /**************** **************** **************** ------HEADER------ **************** **************** ****************/
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+
+header {
+  padding: 25px;
+  border-bottom: 2px solid #f4f7f8;
+  justify-content: space-between;
+  background-color: white;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+}
+
+
+    /**************** **************** **************** ------NAV------ **************** **************** ****************/
+
+nav {
+  justify-content: flex-end;
+  align-self: center;
+}
+
+.navList {
+  flex-wrap: wrap; 
+  justify-content: flex-end;
+}
+
+.navList_Item {
+  padding: 0 10px;
+  border-right: 2px solid #BCBCBC;
+  font-size: .935rem;
+}
+
+.navList_Item:last-child {
+  border: none;
+}
+
+.activePage, .navList_Item a:hover {
+  color: #5fcf80;
+}
+
+.navList_Item a:active {
+  color: #2E8B57;
+}
+
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+    /**************** **************** **************** ------FOOTER------ **************** **************** ****************/
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+
+footer {
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px;
+  background-color: #f4f7f8;
+  color: #C0C0C0;
+  font-size: 12px;
+}
+
+#credit {
+  margin-right: 25px;
+}
+
+.footer_List_Item {
+  list-style-type: none; 
+}
+
+.fa-envelope:hover {
+  color: #4285f4;
+}
+.fa-facebook:hover {
+  color: #365899;
+}
+.fa-twitter:hover {
+  color: #1DA1F2
+}
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+
+
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+    /**************** **************** **************** ------ MEDIA QUERIES ------ **************** **************** ****************/
+/**************** **************** **************** **************** **************** **************** **************** ****************/
+
+
+@media (max-width: 600px) {
+  nav {
+    width: 30px;
+  }
+  .navList_Item:last-child {
+    border-right: 2px solid #BCBCBC;
+  }
+  .fa {
+    font-size: 20px;
+    padding: 10px 5px;
+  }
+  #credit {
+    font-size: 10px;
+  }
+}
+
+
+
+
+
