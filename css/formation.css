@@ -105,31 +105,31 @@ footer {
 }
 
 /*-----------------*/
-#simplonLogo {
+/*#simplonLogo {
   border-radius: 100%; 
   position: relative;
   animation: test 10s infinite both;
-  /*box-shadow: 10px 5px 10px grey; */
+  box-shadow: 10px 5px 10px grey; 
 }
 
 #lcLogo {
-  /*border-radius: 100%; */
+  border-radius: 100%; 
   position: relative;
   animation: test 10s infinite both;
   animation-delay: .4s;
-}
-
+}*/
+/*
 @keyframes test {
 
   0%, 10%, 30%, 50%, 70%, 90% {
     transform: translate3d(0px, 0px, 0px);
-    /*box-shadow: 10px 15px 10px grey; */
+    box-shadow: 10px 15px 10px grey; 
   }
   0%, 20%, 40%, 60%, 80%, 100% {
     transform: translate3d(0px, 20px, 0px);
-    /*box-shadow: 5px 5px 10px lightgrey; */
+    box-shadow: 5px 5px 10px lightgrey; 
   }
-}
+}*/
 
 
 #simplonLogo:hover, 

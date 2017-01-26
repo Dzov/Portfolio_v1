@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <?php $activePage = "Formation"; ?>
+    <?php $activePage = "formation"; ?>
     <?php include 'header.php'; ?>
 
     <main class="flex">

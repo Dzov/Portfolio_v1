@@ -7,7 +7,7 @@
   </head>
 
   <body>
-  <?php $activePage = "Loisirs"; ?>
+  <?php $activePage = "loisirs"; ?>
   <?php include 'header.php'; ?>
 
     <main class="flex">

@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <?php $activePage = "Home"; ?>
+    <?php $activePage = "home"; ?>
     <?php include 'header.php'; ?>
 
     <main class="flex">
@@ -22,3 +22,4 @@
   </body>
 
 </html>
+

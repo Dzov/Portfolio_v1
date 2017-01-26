@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <?php $activePage = "Compétences"; ?>
+    <?php $activePage = "competences"; ?>
     <?php include "header.php"; ?>
 
     <main id="main" class="flex flexColumn">

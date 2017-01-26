@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <?php $activePage = "Expérience"; ?>
+    <?php $activePage = "experience"; ?>
     <?php include "header.php"; ?>
 
     <main>
