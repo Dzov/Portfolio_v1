@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
 
   <head>
-    <?php include 'head.php' ; ?>
     <link type="text/css" href="./css/competence.css" rel="stylesheet">
   </head>
-
-  <body>
-    <?php $activePage = "competences"; ?>
-    <?php include "header.php"; ?>
 
     <main id="main" class="flex flexColumn">
       <section id="webDevSection" class="flex">
@@ -124,9 +117,3 @@
         </aside>
       </section>
     </main>
-
-    <?php include "footer.php" ?>
-    <script src="./js/script.js" type="text/javascript"></script>
-  </body>
-
-</html>

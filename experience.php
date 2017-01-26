@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
 
   <head>
-    <?php include 'head.php' ; ?>
     <link type="text/css" href="./css/experience.css" rel="stylesheet">
   </head>
-
-  <body>
-    <?php $activePage = "experience"; ?>
-    <?php include "header.php"; ?>
 
     <main>
       <section id="meemSection" class="flex">
@@ -69,8 +62,3 @@
       </section>
     </main>
 
-    <?php include "footer.php" ?>
-    <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
-  </body>
-
-</html>
