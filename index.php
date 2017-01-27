@@ -1,3 +1,18 @@
+
+    <?php 
+      $getContent = $_GET["content"];
+
+      function activePage ($page, $content) {
+        if ($content == $page) {
+          echo "activePage";
+        }
+      } 
+
+      $securePages = array("mainIndex.php", "competences.php", "experience.php", "formation.php", "loisirs.php" );
+
+    ?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -16,27 +31,33 @@
       <nav class="flex">
         <ul class="navList flex flexRow">
           <li class="navList_Item">
-            <a href="index.php?content=mainIndex.php" <?php if ($_GET["content"] == 'mainIndex.php') { echo "class = 'activePage'" ;} ?> >Home</a>
+            <a href="index.php?content=mainIndex.php" class="<?php activePage("mainIndex.php", $getContent) ?>" >Home</a>
           </li>
           <li class="navList_Item">
-            <a href="index.php?content=competences.php" <?php if ($_GET["content"] == 'competences.php') { echo "class = 'activePage'" ;} ?> >Compétences</a>
+            <a href="index.php?content=competences.php" class="<?php activePage("competences.php", $getContent) ?>" >Compétences</a>
           </li>
           <li class="navList_Item">
-            <a href="index.php?content=experience.php" <?php if ($_GET["content"] == 'experience.php') { echo "class = 'activePage'" ;} ?> >Expérience</a>
+            <a href="index.php?content=experience.php" class="<?php activePage("experience.php", $getContent) ?>" >Expérience</a>
           </li>
           <li class="navList_Item">
-            <a href="index.php?content=formation.php" <?php if ($_GET["content"] == 'formation.php') { echo "class = 'activePage'" ;} ?> >Formation</a>
+            <a href="index.php?content=formation.php" class="<?php activePage("formation.php", $getContent) ?>" >Formation</a>
           </li>
           <li class="navList_Item">
-            <a href="index.php?content=loisirs.php" <?php if ($_GET["content"] == 'loisirs.php') { echo "class = 'activePage'" ;} ?> >Loisirs</a>
+            <a href="index.php?content=loisirs.php" class="<?php activePage("loisirs.php", $getContent) ?>" >Loisirs</a>
           </li>
         </ul>
       </nav><!-- /nav -->
     </header> <!-- /HEADER -->
 
+    <?php 
 
-    <?php include $_GET["content"]; ?>
-
+      if (in_array($getContent, $securePages)) {
+        include $getContent; 
+      }
+      else {
+        echo "error, wrong page"; 
+      }
+    ?>
 
     <footer class="flex">
           <p id="credit">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> and <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
