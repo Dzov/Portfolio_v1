@@ -8,16 +8,19 @@ section {
   width: 50%;
   margin: auto;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 
 article {
   flex: 1 50%;
   text-align: justify; 
+  align-items: center; 
 }
 
-#simplonLogo{
+#simplonLogo, 
+#lcLogo {
   height: auto;
-  width: 50%;
+  width: 60%;
   align-self: center; 
   margin-bottom: 20px;
 }

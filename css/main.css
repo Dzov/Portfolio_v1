@@ -103,9 +103,11 @@ nav {
   border: none;
 }
 
-.activePage, .navList_Item a:hover {
+nav li a.active, .navList_Item a:hover {
   color: #5fcf80;
 }
+
+
 
 .navList_Item a:active {
   color: #2E8B57;
