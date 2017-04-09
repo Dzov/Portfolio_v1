@@ -23,39 +23,40 @@ footer {
   bottom: 0; 
 }
 
+
 /**************** **************** **************** **************** **************** **************** **************** ****************/
   /**************** **************** **************** ------ ANIMATIONS ------ **************** **************** ****************/
 /**************** **************** **************** **************** **************** **************** **************** ****************/
 
 .n1 img, .n3 img, .n5 img {
-  animation: topImg 2s both;
+  animation: topImg 1s both;
   position: relative;
 }
 
 .n2 img, .n4 img, .n6 img {
-  animation: bottomImg 2s both;
+  animation: bottomImg 1s both;
   position: relative;
   /*animation-delay: .3s; */
 }
 
 .n2 img{
-  animation-delay: .2s;
+  animation-delay: .1s;
 }
 
 .n3 img{
-  animation-delay: .4s;
+  animation-delay: .2s;
 }
 
 .n4 img{
-  animation-delay: .6s;
+  animation-delay: .3s;
 }
 
 .n5 img{
-  animation-delay: .8s;
+  animation-delay: .4s;
 }
 
 .n6 img{
-  animation-delay: 1s;
+  animation-delay: .5s;
 }
 
 

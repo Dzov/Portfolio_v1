@@ -56,12 +56,81 @@ li {
   justify-content: center; 
 }
 
+.spaceAround {
+  justify-content: space-around;
+}
 
+.spaceBtw {
+  justify-content: space-between;
+}
+
+.selfCenter {
+  align-self: center;
+}
 
 .fa {
   font-size: 25px;
   padding: 0 10px;
 } /*icones FontAwesome*/
+
+
+
+/****************  ------COL LAYOUT------  ****************/
+
+[class^ = "col-"] {
+  float: left;
+  padding: 0 1rem;
+}
+
+
+.col-1 {
+  width: calc(100% / 12);
+}
+
+.col-2 {
+  width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+  width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+  width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+  width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+  width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+  width: calc(100% / 12 * 7) ;
+}
+
+.col-8 {
+  width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+  width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+  width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+  width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+  width: calc(100% / 12 * 12);
+}
+
 
 
 /**************** **************** **************** **************** **************** **************** **************** ****************/
@@ -103,7 +172,7 @@ nav {
   border: none;
 }
 
-nav li a.active, .navList_Item a:hover {
+nav li a.active, .navList_Item a:hover, .activeHome {
   color: #5fcf80;
 }
 
@@ -137,8 +206,8 @@ footer {
 .fa-envelope:hover {
   color: #4285f4;
 }
-.fa-facebook:hover {
-  color: #365899;
+.fa-github:hover {
+  color: grey;
 }
 .fa-twitter:hover {
   color: #1DA1F2
